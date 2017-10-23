@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MY PROFILE</title>
+	<style type="text/css">
+		.wrap{
+			background: #34495e;
+			width: 900px;
+			margin: 10px auto;
+		}
+
+		.wrap .header{
+			background:#bfc9ca;
+			padding: 2px 10px;
+		}
+
+		.wrap .menu{
+			background: #979a9a;
+		}
+
+		.wrap .menu ul{
+			padding: 0;
+			margin: 0;
+			background: #979a9a;
+			overflow: hidden;
+		}
+
+		.wrap .menu ul li{
+			float: left;
+			list-style-type: none;
+			padding: 10px;
+		}
+
+		.clear{
+			clear: both;
+		}
+
+		.badan{
+			height: 450px;
+		}
+
+		.wrap .badan .sidebar{
+			background:  #cacfd2;
+			float: left;	
+			width: 25%;
+			height: 100%;
+		}
+
+		.wrap .badan .content{
+			background: #ecf0f1;
+			float: left;
+			height: 100%;
+			width: 75%;
+		}
+
+		.wrap .badan .content .tabing{
+			padding: 10px;
+		}
+
+		.wrap .badan .sidebar .tabing2{
+			padding: 10px;
+		}
+
+		.wrap .footer{
+			width: 100%;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="header">			
+			<h1>WEB PROFILE</h1>
+			<p><i>Kenali Dirimu di Sini~</i></p>
+		</div>
+		<div class="menu">
+				<center><h2>Welcome New User</h2></center>
+		</div>
+		<div class="badan">			
+			<div class="sidebar">
+				<div class="tabing2">
+					<br><b><a href="index.html">Back to Portal</a></b><br><br>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="tabing">
+					<br><b>Create New Account</b><br><br>
+					<form action="create.php" method="POST" enctype="multipart/form-data">
+						<table>
+							<tr>
+								<td>Nama</td>
+								<td>:</td>
+							
+								<td><input type="text" name="nama" required="required"/></td>
+							</tr><tr></tr><tr></tr><tr></tr>
+
+							<tr>
+								<td>Username</td>
+								<td>:</td>
+								
+								<td><input type="text" name="username" required="required"/></td>
+							</tr><tr></tr><tr></tr><tr></tr>
+							
+							<tr>
+								<td>Password</td>
+								<td>:</td>
+								
+								<td><input type="password" name="password" required="required"/></td>
+							</tr><tr></tr><tr></tr><tr></tr>
+
+							<tr>
+								<td>Jenis Kelamin</td>
+								<td>:</td>
+								<td><input type="radio" name="jenis_kelamin" value="laki-laki" checked /> Laki - Laki
+								<input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</td>
+							</tr><tr></tr><tr></tr><tr></tr>
+
+							<tr>
+								<td>Tanggal Lahir</td>
+								<td>:</td>
+
+								<td>
+									Day
+									<select name="dd">
+										<option value="01">01</option>
+	    								<option value="02">02</option>
+	    								<option value="03">03</option>
+	    								<option value="04">04</option>
+	    								<option value="05">05</option>
+	    								<option value="06">06</option>
+	    								<option value="07">07</option>
+	    								<option value="08">08</option>
+	    								<option value="09">09</option>
+	    								<option value="10">10</option>
+	    								<option value="11">11</option>
+	    								<option value="12">12</option>
+	    								<option value="13">13</option>
+	    								<option value="14">14</option>
+	    								<option value="15">15</option>
+	    								<option value="16">16</option>
+	    								<option value="17">17</option>
+	    								<option value="18">18</option>
+	    								<option value="19">19</option>
+	    								<option value="20">20</option>
+	    								<option value="21">21</option>
+	    								<option value="22">22</option>
+	    								<option value="23">23</option>
+	    								<option value="24">24</option>
+	    								<option value="25">25</option>
+	    								<option value="26">26</option>
+	    								<option value="27">27</option>
+	    								<option value="28">28</option>
+	    								<option value="29">29</option>
+	    								<option value="30">30</option>
+	    								<option value="31">31</option>
+ 									</select>
+ 								
+ 									Month
+									<select name="mm">
+										<option value="01">01</option>
+	    								<option value="02">02</option>
+	    								<option value="03">03</option>
+	    								<option value="04">04</option>
+	    								<option value="05">05</option>
+	    								<option value="06">06</option>
+	    								<option value="07">07</option>
+	    								<option value="08">08</option>
+	    								<option value="09">09</option>
+	    								<option value="10">10</option>
+	    								<option value="11">11</option>
+	    								<option value="12">12</option>
+ 									</select>
+
+ 									Year
+									<select name="yy">
+										<option value="1991">1991</option>
+	    								<option value="1992">1992</option>
+	    								<option value="1993">1993</option>
+	    								<option value="1994">1994</option>
+	    								<option value="1995">1995</option>
+	    								<option value="1996">1996</option>
+	    								<option value="1997">1997</option>
+	    								<option value="1998">1998</option>
+	    								<option value="1999">1999</option>
+	    								<option value="2000">2000</option>
+ 									</select>
+ 								</td>
+							</tr><tr></tr><tr></tr><tr></tr>
+
+							<tr>
+								<td>Asal Kota</td>
+								<td>:</td>
+								<td><input type="text" name="asal" required="required"/></td>
+							</tr><tr></tr><tr></tr><tr></tr>
+
+							<tr>
+								<td>Email</td>
+								<td>:</td>
+								<td><input type="text" name="email" required="required"/></td>
+							</tr><tr></tr><tr></tr><tr></tr>
+							
+							<tr>
+								<td>No HP</td>
+								<td>:</td>
+								<td><input type="text" name="nohp" required="required"/></td>
+							</tr><tr></tr><tr></tr><tr></tr>
+							
+							<tr>
+								<td>Foto Profile</td>
+								<td>:</td>
+								<td><input type="file" name="gambar"></td>
+							</tr>
+						</table>
+						<br><input type="submit" value="Create Account"/>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="footer">
+			Tugas Camin AJK by Satria 056
+		</div>
+	</div>
+</body>
+</html>
